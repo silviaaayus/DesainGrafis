@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bagroundevaluasi"
+    tools:context=".Evaluasi.DataSiswaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="-30dp"
+            android:translationZ="3dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_baseline_chevron_right_24"
+                    android:rotation="180"
+                    app:tint="@color/black" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/poppins_light"
+                    android:text="Evaluasi"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/_10sdp"
+            >
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:src="@drawable/evaluasi"
+
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="#7C7777"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/edtnama"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/edit_text"
+                android:singleLine="true"/>
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kelas"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/poppins_light"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <EditText
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textColorHint="#7C7777"
+                android:textSize="@dimen/_12sdp"
+                android:id="@+id/edtkelas"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/_35sdp"
+                android:background="@drawable/edit_text"
+                android:singleLine="true"/>
+
+            <Button
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/next"
+                android:text="Next"
+                android:fontFamily="@font/poppins_light"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:background="@drawable/edit_text"
+                android:backgroundTint="?colorPrimary"
+                android:layout_gravity="right"/>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</RelativeLayout>
